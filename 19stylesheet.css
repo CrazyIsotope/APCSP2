@@ -1,0 +1,118 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header {
+  text-align: center;
+  padding: 60px 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 5em; /* Increased size for a grand header */
+  color: #2c3e50;
+  animation: fadeIn 2s ease-out;
+}
+
+h3 {
+  font-size: 3em; /* Larger subheading */
+  color: #34495e;
+  animation: fadeIn 2s ease-out 0.5s;
+}
+
+h5 {
+  color: #7f8c8d;
+  font-size: 1.8em; /* Larger font for the tagline */
+  font-style: italic;
+  animation: fadeIn 2s ease-out 1s;
+}
+
+.section {
+  margin: 60px 0; /* Increased margin for larger sections */
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  animation: fadeIn 2s ease-out;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 20px; /* Larger border-radius */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  animation: slideUp 2s ease-out;
+}
+
+.image-small {
+  width: 70%; /* Make small images bigger */
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  animation: slideUp 2s ease-out 0.5s;
+}
+
+.book {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 40px; /* Increased padding */
+  margin-top: 40px;
+  border-radius: 16px; /* Larger rounded corners */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Bigger shadow */
+  font-size: 1.5em; /* Larger font size */
+  line-height: 1.8; /* Increased line height for better readability */
+  animation: slideUp 2s ease-out 1s;
+}
+
+.book:hover {
+  background-color: #34495e;
+  transition: background-color 0.3s ease-in-out;
+}
+
+h3 {
+  font-size: 3.5em; /* Increased size for section headers */
+  margin-bottom: 30px;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-Up Animation */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
